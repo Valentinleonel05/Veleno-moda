@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto | Veleno Moda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="product">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <button class="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="index.html" class="logo">
+        <span class="logo-text">VELENO</span>
+        <span class="logo-sub">MODA</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="remeras.html" class="nav-link">Hombre</a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown-inner">
+              <div class="dropdown-column">
+                <h4>Destacados</h4>
+                <a href="remeras.html">Ver Todo</a>
+                <a href="index.html#sale-section" class="sale-link">SALE</a>
+                <a href="remeras.html">Novedades</a>
+                <a href="buzos.html">Lo Más Vendido</a>
+                <a href="camperas.html">Colección Invierno</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>Ropa</h4>
+                <a href="remeras.html">Remeras</a>
+                <a href="pantalones.html">Pantalones</a>
+                <a href="baggy.html">Pantalones Baggy</a>
+                <a href="buzos.html">Buzos & Hoodies</a>
+                <a href="camperas.html">Camperas</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>Calzado</h4>
+                <a href="zapatillas.html">Zapatillas</a>
+              </div>
+              <div class="dropdown-img">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&auto=format" alt="Colección Hombre">
+                <span>Nueva Colección</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="remeras.html" class="nav-link">Mujer</a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown-inner">
+              <div class="dropdown-column">
+                <h4>Destacados</h4>
+                <a href="remeras.html">Ver Todo</a>
+                <a href="index.html#sale-section" class="sale-link">SALE</a>
+                <a href="remeras.html">Novedades</a>
+                <a href="buzos.html">Tendencias</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>Ropa</h4>
+                <a href="remeras.html">Remeras & Tops</a>
+                <a href="pantalones.html">Pantalones</a>
+                <a href="baggy.html">Jeans</a>
+                <a href="buzos.html">Buzos & Hoodies</a>
+                <a href="camperas.html">Camperas</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>Calzado</h4>
+                <a href="zapatillas.html">Zapatillas</a>
+              </div>
+              <div class="dropdown-img">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=300&h=400&fit=crop&auto=format" alt="Colección Mujer">
+                <span>Tendencias 2026</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="baggy.html" class="nav-link">Colecciones</a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown-inner">
+              <div class="dropdown-column">
+                <h4>Estilos</h4>
+                <a href="baggy.html">Streetwear</a>
+                <a href="remeras.html">Oversize</a>
+                <a href="camperas.html">Vintage</a>
+                <a href="remeras.html">Minimal</a>
+                <a href="buzos.html">Urban</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>Temporada</h4>
+                <a href="camperas.html">Invierno 2026</a>
+                <a href="remeras.html">Primavera 2026</a>
+                <a href="buzos.html">Cápsula Limitada</a>
+              </div>
+              <div class="dropdown-img">
+                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=300&h=400&fit=crop&auto=format" alt="Colecciones">
+                <span>Streetwear</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#sale-section" class="nav-link nav-sale">SALE</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Buscar"><i class="fas fa-search"></i></button>
+        <a href="carrito.html" class="nav-action-btn cart-btn" aria-label="Carrito">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" style="display:none;">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay">
+    <div class="search-overlay-content">
+      <button class="search-close"><i class="fas fa-times"></i></button>
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="¿Qué estás buscando?" autocomplete="off">
+      </div>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-container">
+    <nav class="breadcrumb"></nav>
+  </div>
+
+  <!-- Product Detail -->
+  <section class="product-detail">
+    <div class="product-detail-container">
+      <div class="product-gallery">
+        <div class="product-main-img">
+          <img id="mainProductImg" src="" alt="Producto">
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h1 id="productName"></h1>
+        <div class="product-price-detail" id="productPrice"></div>
+
+        <div class="product-option">
+          <label>Color</label>
+          <div class="color-options" id="productColors"></div>
+        </div>
+
+        <div class="product-option">
+          <label>Talle</label>
+          <div class="size-options" id="productSizes"></div>
+        </div>
+
+        <div class="product-option">
+          <label>Cantidad</label>
+          <div class="qty-selector">
+            <button id="qtyMinus" class="qty-ctrl">−</button>
+            <input type="number" id="productQty" value="1" min="1" max="10" readonly>
+            <button id="qtyPlus" class="qty-ctrl">+</button>
+          </div>
+        </div>
+
+        <button id="addToCartBtn" class="btn-primary btn-add-cart">
+          <i class="fas fa-shopping-bag"></i> Agregar al Carrito
+        </button>
+
+        <div class="product-extra">
+          <div class="extra-item">
+            <i class="fas fa-truck"></i>
+            <div>
+              <strong>Envío gratis</strong>
+              <span>En compras mayores a $50.000</span>
+            </div>
+          </div>
+          <div class="extra-item">
+            <i class="fas fa-undo"></i>
+            <div>
+              <strong>Devolución gratuita</strong>
+              <span>30 días para cambios</span>
+            </div>
+          </div>
+          <div class="extra-item">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <strong>Compra segura</strong>
+              <span>Protección al comprador</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-methods">
+          <h4>Métodos de Pago</h4>
+          <div class="pay-icons-detail">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-paypal"></i>
+          </div>
+          <p class="installments">Hasta <strong>6 cuotas sin interés</strong></p>
+        </div>
+
+        <div class="product-description">
+          <h4>Descripción</h4>
+          <p id="productDesc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="section related-section">
+    <div class="section-header">
+      <h2 class="section-title">También te puede interesar</h2>
+    </div>
+    <div class="product-grid related-grid"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-text">VELENO</span>
+            <span class="logo-sub">MODA</span>
+          </div>
+          <p class="footer-about">Moda urbana contemporánea. Diseño, calidad y estilo en cada prenda.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>TIENDA</h4>
+          <a href="remeras.html">Remeras</a>
+          <a href="pantalones.html">Pantalones</a>
+          <a href="baggy.html">Baggy</a>
+          <a href="buzos.html">Buzos & Hoodies</a>
+          <a href="camperas.html">Camperas</a>
+          <a href="zapatillas.html">Zapatillas</a>
+        </div>
+        <div class="footer-col">
+          <h4>CONTACTO</h4>
+          <a href="mailto:Valentinleonel05@gmail.com"><i class="fas fa-envelope"></i> Valentinleonel05@gmail.com</a>
+          <a href="tel:+541149402322"><i class="fas fa-phone"></i> +54 11 4940-2322</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</a>
+          <a href="https://wa.me/541149402322" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <p>&copy; 2026 Veleno Moda. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Política de Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
